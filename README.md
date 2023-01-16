@@ -1,4 +1,4 @@
-# Chat Application
+# BeeChat - Chat Application
  
 A chat application that allows users to communicate with each other in real-time through text.
  
