@@ -9,10 +9,14 @@ A chat application that allows users to communicate with each other in real-time
  
 # Features
 * Authentication - Login, Signup and logout
-* User Profile
-* User Search
+* User Profile - Shows the user information and have the ability to edit Profile
+* User Search - Ability to search users on the ap
 * Home Screen (Shows list of User with whom you have engaged)
-* Chat Screen with the User
+* Filter and Delete Users from Home Screen
+* Sending and receiving messages
+* Status of message whether the message was read by the person
+* Typing indicator, if the other user is typing message
+
  
  
 # User Roles (Optional)
