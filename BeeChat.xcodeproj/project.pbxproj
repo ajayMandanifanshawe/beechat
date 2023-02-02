@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37669C9D298C65BB001AA388 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 37669C9C298C65BB001AA388 /* FirebaseAnalytics */; };
+		37669C9F298C65BB001AA388 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 37669C9E298C65BB001AA388 /* FirebaseAuth */; };
+		37669CA1298C65BB001AA388 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 37669CA0298C65BB001AA388 /* FirebaseFirestore */; };
+		37669CA3298C65BB001AA388 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 37669CA2298C65BB001AA388 /* FirebaseFirestoreSwift */; };
+		37669CA5298C65BB001AA388 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 37669CA4298C65BB001AA388 /* FirebaseMessaging */; };
+		37669CA7298C65BB001AA388 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 37669CA6298C65BB001AA388 /* FirebaseStorage */; };
+		37669CAA298C6DAA001AA388 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 37669CA9298C6DAA001AA388 /* Realm */; };
+		37669CAD298C71FF001AA388 /* Gallery in Frameworks */ = {isa = PBXBuildFile; productRef = 37669CAC298C71FF001AA388 /* Gallery */; };
+		37669CB0298C726B001AA388 /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 37669CAF298C726B001AA388 /* MessageKit */; };
+		37669CB3298C72CC001AA388 /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 37669CB2298C72CC001AA388 /* ProgressHUD */; };
+		37669CB6298C73B9001AA388 /* SKPhotoBrowser in Frameworks */ = {isa = PBXBuildFile; productRef = 37669CB5298C73B9001AA388 /* SKPhotoBrowser */; };
+		37669CB9298C7418001AA388 /* InputBarAccessoryView in Frameworks */ = {isa = PBXBuildFile; productRef = 37669CB8298C7418001AA388 /* InputBarAccessoryView */; };
+		37669CBB298C7AC3001AA388 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37669CBA298C7AC3001AA388 /* GoogleService-Info.plist */; };
+		37669CBE298C7D8C001AA388 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37669CBD298C7D8C001AA388 /* RegisterViewController.swift */; };
 		377ED9CF29762EB200C418D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377ED9CE29762EB200C418D5 /* AppDelegate.swift */; };
 		377ED9D129762EB200C418D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377ED9D029762EB200C418D5 /* SceneDelegate.swift */; };
 		377ED9D329762EB200C418D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377ED9D229762EB200C418D5 /* ViewController.swift */; };
@@ -16,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37669CBA298C7AC3001AA388 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		37669CBD298C7D8C001AA388 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		377ED9CB29762EB200C418D5 /* BeeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		377ED9CE29762EB200C418D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		377ED9D029762EB200C418D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,12 +47,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37669CAA298C6DAA001AA388 /* Realm in Frameworks */,
+				37669C9D298C65BB001AA388 /* FirebaseAnalytics in Frameworks */,
+				37669C9F298C65BB001AA388 /* FirebaseAuth in Frameworks */,
+				37669CB0298C726B001AA388 /* MessageKit in Frameworks */,
+				37669CA5298C65BB001AA388 /* FirebaseMessaging in Frameworks */,
+				37669CB9298C7418001AA388 /* InputBarAccessoryView in Frameworks */,
+				37669CB3298C72CC001AA388 /* ProgressHUD in Frameworks */,
+				37669CB6298C73B9001AA388 /* SKPhotoBrowser in Frameworks */,
+				37669CA1298C65BB001AA388 /* FirebaseFirestore in Frameworks */,
+				37669CA3298C65BB001AA388 /* FirebaseFirestoreSwift in Frameworks */,
+				37669CA7298C65BB001AA388 /* FirebaseStorage in Frameworks */,
+				37669CAD298C71FF001AA388 /* Gallery in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37669CBC298C7D6C001AA388 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				377ED9D229762EB200C418D5 /* ViewController.swift */,
+				37669CBD298C7D8C001AA388 /* RegisterViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		377ED9C229762EB200C418D5 = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +93,13 @@
 		377ED9CD29762EB200C418D5 /* BeeChat */ = {
 			isa = PBXGroup;
 			children = (
+				37669CBC298C7D6C001AA388 /* View */,
 				377ED9CE29762EB200C418D5 /* AppDelegate.swift */,
 				377ED9D029762EB200C418D5 /* SceneDelegate.swift */,
-				377ED9D229762EB200C418D5 /* ViewController.swift */,
 				377ED9D429762EB200C418D5 /* Main.storyboard */,
 				377ED9D729762EB400C418D5 /* Assets.xcassets */,
 				377ED9D929762EB400C418D5 /* LaunchScreen.storyboard */,
+				37669CBA298C7AC3001AA388 /* GoogleService-Info.plist */,
 				377ED9DC29762EB400C418D5 /* Info.plist */,
 			);
 			path = BeeChat;
@@ -83,6 +121,20 @@
 			dependencies = (
 			);
 			name = BeeChat;
+			packageProductDependencies = (
+				37669C9C298C65BB001AA388 /* FirebaseAnalytics */,
+				37669C9E298C65BB001AA388 /* FirebaseAuth */,
+				37669CA0298C65BB001AA388 /* FirebaseFirestore */,
+				37669CA2298C65BB001AA388 /* FirebaseFirestoreSwift */,
+				37669CA4298C65BB001AA388 /* FirebaseMessaging */,
+				37669CA6298C65BB001AA388 /* FirebaseStorage */,
+				37669CA9298C6DAA001AA388 /* Realm */,
+				37669CAC298C71FF001AA388 /* Gallery */,
+				37669CAF298C726B001AA388 /* MessageKit */,
+				37669CB2298C72CC001AA388 /* ProgressHUD */,
+				37669CB5298C73B9001AA388 /* SKPhotoBrowser */,
+				37669CB8298C7418001AA388 /* InputBarAccessoryView */,
+			);
 			productName = BeeChat;
 			productReference = 377ED9CB29762EB200C418D5 /* BeeChat.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +163,15 @@
 				Base,
 			);
 			mainGroup = 377ED9C229762EB200C418D5;
+			packageReferences = (
+				37669C9B298C65BB001AA388 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				37669CA8298C6DAA001AA388 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				37669CAB298C71FF001AA388 /* XCRemoteSwiftPackageReference "Gallery" */,
+				37669CAE298C726B001AA388 /* XCRemoteSwiftPackageReference "MessageKit" */,
+				37669CB1298C72CC001AA388 /* XCRemoteSwiftPackageReference "ProgressHUD" */,
+				37669CB4298C73B9001AA388 /* XCRemoteSwiftPackageReference "SKPhotoBrowser" */,
+				37669CB7298C7418001AA388 /* XCRemoteSwiftPackageReference "InputBarAccessoryView" */,
+			);
 			productRefGroup = 377ED9CC29762EB200C418D5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +186,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37669CBB298C7AC3001AA388 /* GoogleService-Info.plist in Resources */,
 				377ED9DB29762EB400C418D5 /* LaunchScreen.storyboard in Resources */,
 				377ED9D829762EB400C418D5 /* Assets.xcassets in Resources */,
 				377ED9D629762EB200C418D5 /* Main.storyboard in Resources */,
@@ -141,6 +203,7 @@
 				377ED9D329762EB200C418D5 /* ViewController.swift in Sources */,
 				377ED9CF29762EB200C418D5 /* AppDelegate.swift in Sources */,
 				377ED9D129762EB200C418D5 /* SceneDelegate.swift in Sources */,
+				37669CBE298C7D8C001AA388 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,8 +356,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,8 +383,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,6 +419,128 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		37669C9B298C65BB001AA388 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		37669CA8298C6DAA001AA388 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		37669CAB298C71FF001AA388 /* XCRemoteSwiftPackageReference "Gallery" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hyperoslo/Gallery.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		37669CAE298C726B001AA388 /* XCRemoteSwiftPackageReference "MessageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MessageKit/MessageKit.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		37669CB1298C72CC001AA388 /* XCRemoteSwiftPackageReference "ProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/relatedcode/ProgressHUD.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		37669CB4298C73B9001AA388 /* XCRemoteSwiftPackageReference "SKPhotoBrowser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/suzuki-0000/SKPhotoBrowser.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		37669CB7298C7418001AA388 /* XCRemoteSwiftPackageReference "InputBarAccessoryView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nathantannar4/InputBarAccessoryView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		37669C9C298C65BB001AA388 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37669C9B298C65BB001AA388 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		37669C9E298C65BB001AA388 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37669C9B298C65BB001AA388 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		37669CA0298C65BB001AA388 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37669C9B298C65BB001AA388 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		37669CA2298C65BB001AA388 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37669C9B298C65BB001AA388 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		37669CA4298C65BB001AA388 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37669C9B298C65BB001AA388 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		37669CA6298C65BB001AA388 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37669C9B298C65BB001AA388 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		37669CA9298C6DAA001AA388 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37669CA8298C6DAA001AA388 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		37669CAC298C71FF001AA388 /* Gallery */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37669CAB298C71FF001AA388 /* XCRemoteSwiftPackageReference "Gallery" */;
+			productName = Gallery;
+		};
+		37669CAF298C726B001AA388 /* MessageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37669CAE298C726B001AA388 /* XCRemoteSwiftPackageReference "MessageKit" */;
+			productName = MessageKit;
+		};
+		37669CB2298C72CC001AA388 /* ProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37669CB1298C72CC001AA388 /* XCRemoteSwiftPackageReference "ProgressHUD" */;
+			productName = ProgressHUD;
+		};
+		37669CB5298C73B9001AA388 /* SKPhotoBrowser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37669CB4298C73B9001AA388 /* XCRemoteSwiftPackageReference "SKPhotoBrowser" */;
+			productName = SKPhotoBrowser;
+		};
+		37669CB8298C7418001AA388 /* InputBarAccessoryView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37669CB7298C7418001AA388 /* XCRemoteSwiftPackageReference "InputBarAccessoryView" */;
+			productName = InputBarAccessoryView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 377ED9C329762EB200C418D5 /* Project object */;
 }

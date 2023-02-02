@@ -2,8 +2,6 @@
 //  ViewController.swift
 //  BeeChat
 //
-//  Created by Ajay Mandani on 2023-01-16.
-//
 
 import UIKit
 
@@ -14,6 +12,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func registerBtnPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "registersegue", sender: nil)
+    }
+    
+    @IBAction func loginBtnPressed(_ sender: Any) {
+    }
 }
 
