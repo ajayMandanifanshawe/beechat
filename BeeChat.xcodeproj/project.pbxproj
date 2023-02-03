@@ -21,6 +21,9 @@
 		37669CB9298C7418001AA388 /* InputBarAccessoryView in Frameworks */ = {isa = PBXBuildFile; productRef = 37669CB8298C7418001AA388 /* InputBarAccessoryView */; };
 		37669CBB298C7AC3001AA388 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37669CBA298C7AC3001AA388 /* GoogleService-Info.plist */; };
 		37669CBE298C7D8C001AA388 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37669CBD298C7D8C001AA388 /* RegisterViewController.swift */; };
+		37669CC3298C8176001AA388 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37669CC2298C8176001AA388 /* User.swift */; };
+		37669CC5298C829C001AA388 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37669CC4298C829C001AA388 /* Helper.swift */; };
+		37669CC7298C8368001AA388 /* FirebaseUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37669CC6298C8368001AA388 /* FirebaseUser.swift */; };
 		377ED9CF29762EB200C418D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377ED9CE29762EB200C418D5 /* AppDelegate.swift */; };
 		377ED9D129762EB200C418D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377ED9D029762EB200C418D5 /* SceneDelegate.swift */; };
 		377ED9D329762EB200C418D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377ED9D229762EB200C418D5 /* ViewController.swift */; };
@@ -32,6 +35,9 @@
 /* Begin PBXFileReference section */
 		37669CBA298C7AC3001AA388 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		37669CBD298C7D8C001AA388 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		37669CC2298C8176001AA388 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		37669CC4298C829C001AA388 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		37669CC6298C8368001AA388 /* FirebaseUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUser.swift; sourceTree = "<group>"; };
 		377ED9CB29762EB200C418D5 /* BeeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		377ED9CE29762EB200C418D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		377ED9D029762EB200C418D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +80,30 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		37669CBF298C8100001AA388 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				37669CC2298C8176001AA388 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		37669CC0298C810E001AA388 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				37669CC4298C829C001AA388 /* Helper.swift */,
+				37669CC6298C8368001AA388 /* FirebaseUser.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		37669CC1298C8126001AA388 /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extras;
+			sourceTree = "<group>";
+		};
 		377ED9C229762EB200C418D5 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +123,9 @@
 		377ED9CD29762EB200C418D5 /* BeeChat */ = {
 			isa = PBXGroup;
 			children = (
+				37669CC1298C8126001AA388 /* Extras */,
+				37669CC0298C810E001AA388 /* Helpers */,
+				37669CBF298C8100001AA388 /* Model */,
 				37669CBC298C7D6C001AA388 /* View */,
 				377ED9CE29762EB200C418D5 /* AppDelegate.swift */,
 				377ED9D029762EB200C418D5 /* SceneDelegate.swift */,
@@ -203,7 +236,10 @@
 				377ED9D329762EB200C418D5 /* ViewController.swift in Sources */,
 				377ED9CF29762EB200C418D5 /* AppDelegate.swift in Sources */,
 				377ED9D129762EB200C418D5 /* SceneDelegate.swift in Sources */,
+				37669CC7298C8368001AA388 /* FirebaseUser.swift in Sources */,
+				37669CC3298C8176001AA388 /* User.swift in Sources */,
 				37669CBE298C7D8C001AA388 /* RegisterViewController.swift in Sources */,
+				37669CC5298C829C001AA388 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
