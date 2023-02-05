@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func loginBtnPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "loginsegue", sender: nil)
+        
     }
 }
 

@@ -6,16 +6,27 @@
 //
 
 import UIKit
-
+import FirebaseAuth
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    var authListener:AuthStateDidChangeListenerHandle?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        authListener = Auth.auth().addStateDidChangeListener({ auth, user in
+            Auth.auth().removeStateDidChangeListener(self.authListener!)
+            if user != nil && UserDefaults.standard.object(forKey: ConstCurrentUser) != nil{
+                DispatchQueue.main.async {
+                    let story = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "home") as! UITabBarController
+                    story.modalPresentationStyle = .fullScreen
+                    self.window?.rootViewController = story
+                }
+            }
+            
+        })
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 

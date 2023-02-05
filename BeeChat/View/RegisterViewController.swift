@@ -79,6 +79,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func loginScreenPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "loginsegue", sender: nil)
     }
     
     

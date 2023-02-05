@@ -29,7 +29,7 @@ class FirebaseUser{
                 
                 
                 self.saveUserOnFirebase(user:myuser)
-                saveUserLocally(user:myuser)
+//                saveUserLocally(user:myuser)
                 print(myuser)
                 completion(nil)
             }
@@ -38,6 +38,40 @@ class FirebaseUser{
             
             
             
+        }
+    }
+    
+    func signin(email:String,password:String, completion:@escaping (_ error:Error?)->Void){
+        Auth.auth().signIn(withEmail: email, password: password) { res, error in
+            guard error == nil else{
+                completion(error!)
+                return
+            }
+            
+            
+            self.downloadUserFromFirebase(userId: (res?.user.uid)!)
+            completion(nil)
+            
+        }
+    }
+    
+    func downloadUserFromFirebase(userId:String,email:String?=""){
+        Firestore.firestore().collection(CollectionFire.Users.rawValue).document(userId).getDocument { snap, error in
+            if error == nil{
+                
+                do{
+                    let user = try snap?.data(as: User.self)
+                    if let user = user{
+                        saveUserLocally(user: user)
+                    }
+                }catch{
+                    
+                }
+                
+
+               
+                
+            }
         }
     }
     
