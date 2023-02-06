@@ -27,6 +27,7 @@
 		37669CC5298C829C001AA388 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37669CC4298C829C001AA388 /* Helper.swift */; };
 		37669CC7298C8368001AA388 /* FirebaseUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37669CC6298C8368001AA388 /* FirebaseUser.swift */; };
 		377860B92990AA630093A492 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377860B82990AA630093A492 /* ProfileViewController.swift */; };
+		377860BB2991B6270093A492 /* ProfileSeetingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377860BA2991B6270093A492 /* ProfileSeetingsTableViewController.swift */; };
 		377ED9CF29762EB200C418D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377ED9CE29762EB200C418D5 /* AppDelegate.swift */; };
 		377ED9D129762EB200C418D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377ED9D029762EB200C418D5 /* SceneDelegate.swift */; };
 		377ED9D329762EB200C418D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377ED9D229762EB200C418D5 /* ViewController.swift */; };
@@ -44,6 +45,7 @@
 		37669CC4298C829C001AA388 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		37669CC6298C8368001AA388 /* FirebaseUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUser.swift; sourceTree = "<group>"; };
 		377860B82990AA630093A492 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		377860BA2991B6270093A492 /* ProfileSeetingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSeetingsTableViewController.swift; sourceTree = "<group>"; };
 		377ED9CB29762EB200C418D5 /* BeeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		377ED9CE29762EB200C418D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		377ED9D029762EB200C418D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				313AD21A298F74240084FD98 /* LoginViewController.swift */,
 				31B0B43C298F9872009F37FA /* HomeTableViewController.swift */,
 				377860B82990AA630093A492 /* ProfileViewController.swift */,
+				377860BA2991B6270093A492 /* ProfileSeetingsTableViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -106,13 +109,6 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		37669CC1298C8126001AA388 /* Extras */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extras;
-			sourceTree = "<group>";
-		};
 		377ED9C229762EB200C418D5 = {
 			isa = PBXGroup;
 			children = (
@@ -132,7 +128,6 @@
 		377ED9CD29762EB200C418D5 /* BeeChat */ = {
 			isa = PBXGroup;
 			children = (
-				37669CC1298C8126001AA388 /* Extras */,
 				37669CC0298C810E001AA388 /* Helpers */,
 				37669CBF298C8100001AA388 /* Model */,
 				37669CBC298C7D6C001AA388 /* View */,
@@ -251,6 +246,7 @@
 				37669CC3298C8176001AA388 /* User.swift in Sources */,
 				31B0B43D298F9872009F37FA /* HomeTableViewController.swift in Sources */,
 				37669CBE298C7D8C001AA388 /* RegisterViewController.swift in Sources */,
+				377860BB2991B6270093A492 /* ProfileSeetingsTableViewController.swift in Sources */,
 				37669CC5298C829C001AA388 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

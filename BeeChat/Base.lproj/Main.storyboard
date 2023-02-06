@@ -140,7 +140,7 @@
         <!--Profile-->
         <scene sceneID="0Ao-Jy-QEc">
             <objects>
-                <viewController id="lOU-hY-ZSn" customClass="ProfileViewController" customModule="BeeChat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="profilevc" id="lOU-hY-ZSn" customClass="ProfileViewController" customModule="BeeChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vdw-TP-4aM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -292,7 +292,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w4N-0Y-7SR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2721" y="-735"/>
+            <point key="canvasLocation" x="3508" y="-869"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="r5W-Sr-iu9">
@@ -685,7 +685,7 @@
                     <tabBarItem key="tabBarItem" title="Home" image="list.bullet.rectangle.portrait.fill" catalog="system" id="sLa-xO-WSo"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hUQ-ZP-2Kb">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -706,7 +706,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="pOw-QS-SPI">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="pOw-QS-SPI">
                                 <rect key="frame" x="0.0" y="50" width="320" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pOw-QS-SPI" id="3E0-OL-knk">
@@ -740,7 +740,7 @@
                     <tabBarItem key="tabBarItem" title="Profile" image="person.circle.fill" catalog="system" id="RWm-Vn-PVs"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="8mL-um-yLc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="98.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -755,7 +755,7 @@
         <!--Profile-->
         <scene sceneID="0tB-Pl-AZd">
             <objects>
-                <tableViewController id="mTx-ic-3gu" sceneMemberID="viewController">
+                <tableViewController id="mTx-ic-3gu" customClass="ProfileSeetingsTableViewController" customModule="BeeChat" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Kv4-AM-EOd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -876,10 +876,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Profile" largeTitleDisplayMode="always" id="Nkv-xQ-vBh"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="4EX-rw-Hy6" id="IvX-GU-9PN"/>
+                        <outlet property="mobileLabel" destination="vW7-Y1-r6q" id="fag-jJ-jWq"/>
+                        <outlet property="nameLabel" destination="RHB-pL-CY3" id="dwW-Lg-wYa"/>
+                        <outlet property="userProfileimage" destination="2lk-9e-9p4" id="rf6-Kp-3F1"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qvE-Nb-0r4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1966.875" y="-735.21126760563379"/>
+            <point key="canvasLocation" x="2078" y="-735"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
