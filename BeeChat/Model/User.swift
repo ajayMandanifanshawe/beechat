@@ -14,7 +14,7 @@ struct User:Codable,Equatable{
     var pushNotifyIdentifier = ""
     var profileImg = ""
     var status = "Hi there, I am using BeeChat"
-    var phoneNumber = "not specified"
+    var phoneNumber = "no phone number specified"
     var statusMarriage = "not specified"
     var statusOccupation = "not specified"
     static var currentId:String{

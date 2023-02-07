@@ -19,6 +19,10 @@ class ProfileSeetingsTableViewController: UITableViewController {
         updateUI()
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        updateUI()
+    }
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -38,7 +42,9 @@ class ProfileSeetingsTableViewController: UITableViewController {
         if indexPath.section == 2{
             self.performSegue(withIdentifier: "statussegue", sender: nil)
         }
-        
+        if indexPath.section == 0{
+            self.performSegue(withIdentifier: "editUser", sender: nil)
+        }
         
         
     }

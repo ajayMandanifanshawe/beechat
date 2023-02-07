@@ -14,8 +14,10 @@ class StatusTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        statusMessage.text = ""
 
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         updateview()
     }
     

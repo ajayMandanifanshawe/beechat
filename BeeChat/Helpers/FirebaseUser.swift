@@ -25,7 +25,7 @@ class FirebaseUser{
             
             if let user = result?.user {
                 
-                let myuser = User(id:user.uid,username: name,email: user.email!,pushNotifyIdentifier: "",profileImg: "",status: status)
+                let myuser = User(id:user.uid,username: name,email: user.email!,pushNotifyIdentifier: "",profileImg: "",status: status,phoneNumber: "no phone number specified")
                 
                 
                 self.saveUserOnFirebase(user:myuser)

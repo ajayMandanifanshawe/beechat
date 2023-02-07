@@ -35,6 +35,8 @@
 		377ED9D629762EB200C418D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 377ED9D429762EB200C418D5 /* Main.storyboard */; };
 		377ED9D829762EB400C418D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 377ED9D729762EB400C418D5 /* Assets.xcassets */; };
 		377ED9DB29762EB400C418D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 377ED9D929762EB400C418D5 /* LaunchScreen.storyboard */; };
+		37B31F3B2991F60F008D7216 /* EditUserInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B31F3A2991F60F008D7216 /* EditUserInfoTableViewController.swift */; };
+		37B31F3D2991F81B008D7216 /* FirebaseProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B31F3C2991F81B008D7216 /* FirebaseProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		377ED9D729762EB400C418D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		377ED9DA29762EB400C418D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		377ED9DC29762EB400C418D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37B31F3A2991F60F008D7216 /* EditUserInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserInfoTableViewController.swift; sourceTree = "<group>"; };
+		37B31F3C2991F81B008D7216 /* FirebaseProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 				377860B82990AA630093A492 /* ProfileViewController.swift */,
 				377860BA2991B6270093A492 /* ProfileSeetingsTableViewController.swift */,
 				3169B4562991CB80009566AB /* StatusTableViewController.swift */,
+				37B31F3A2991F60F008D7216 /* EditUserInfoTableViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -108,6 +113,7 @@
 			children = (
 				37669CC4298C829C001AA388 /* Helper.swift */,
 				37669CC6298C8368001AA388 /* FirebaseUser.swift */,
+				37B31F3C2991F81B008D7216 /* FirebaseProfile.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -241,12 +247,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				377ED9D329762EB200C418D5 /* ViewController.swift in Sources */,
+				37B31F3B2991F60F008D7216 /* EditUserInfoTableViewController.swift in Sources */,
 				377ED9CF29762EB200C418D5 /* AppDelegate.swift in Sources */,
 				377860B92990AA630093A492 /* ProfileViewController.swift in Sources */,
 				377ED9D129762EB200C418D5 /* SceneDelegate.swift in Sources */,
 				37669CC7298C8368001AA388 /* FirebaseUser.swift in Sources */,
 				313AD21B298F74240084FD98 /* LoginViewController.swift in Sources */,
 				37669CC3298C8176001AA388 /* User.swift in Sources */,
+				37B31F3D2991F81B008D7216 /* FirebaseProfile.swift in Sources */,
 				31B0B43D298F9872009F37FA /* HomeTableViewController.swift in Sources */,
 				37669CBE298C7D8C001AA388 /* RegisterViewController.swift in Sources */,
 				3169B4572991CB80009566AB /* StatusTableViewController.swift in Sources */,
