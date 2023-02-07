@@ -22,7 +22,7 @@ class ProfileSeetingsTableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.section == 2
+        if indexPath.section == 3
         {
             do{
                 try Auth.auth().signOut()
@@ -33,6 +33,10 @@ class ProfileSeetingsTableViewController: UITableViewController {
             }catch{
                 
             }
+        }
+        
+        if indexPath.section == 2{
+            self.performSegue(withIdentifier: "statussegue", sender: nil)
         }
         
         

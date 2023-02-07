@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		313AD21B298F74240084FD98 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313AD21A298F74240084FD98 /* LoginViewController.swift */; };
+		3169B4572991CB80009566AB /* StatusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3169B4562991CB80009566AB /* StatusTableViewController.swift */; };
 		31B0B43D298F9872009F37FA /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B0B43C298F9872009F37FA /* HomeTableViewController.swift */; };
 		37669C9D298C65BB001AA388 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 37669C9C298C65BB001AA388 /* FirebaseAnalytics */; };
 		37669C9F298C65BB001AA388 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 37669C9E298C65BB001AA388 /* FirebaseAuth */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		313AD21A298F74240084FD98 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3169B4562991CB80009566AB /* StatusTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTableViewController.swift; sourceTree = "<group>"; };
 		31B0B43C298F9872009F37FA /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		37669CBA298C7AC3001AA388 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		37669CBD298C7D8C001AA388 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				31B0B43C298F9872009F37FA /* HomeTableViewController.swift */,
 				377860B82990AA630093A492 /* ProfileViewController.swift */,
 				377860BA2991B6270093A492 /* ProfileSeetingsTableViewController.swift */,
+				3169B4562991CB80009566AB /* StatusTableViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				37669CC3298C8176001AA388 /* User.swift in Sources */,
 				31B0B43D298F9872009F37FA /* HomeTableViewController.swift in Sources */,
 				37669CBE298C7D8C001AA388 /* RegisterViewController.swift in Sources */,
+				3169B4572991CB80009566AB /* StatusTableViewController.swift in Sources */,
 				377860BB2991B6270093A492 /* ProfileSeetingsTableViewController.swift in Sources */,
 				37669CC5298C829C001AA388 /* Helper.swift in Sources */,
 			);
