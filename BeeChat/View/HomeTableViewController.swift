@@ -35,7 +35,7 @@ class HomeTableViewController: UITableViewController {
         do{
             try Auth.auth().signOut()
             UserDefaults.standard.removeObject(forKey: ConstCurrentUser)
-            let story = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "welcome") as! UIViewController
+            let story = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "welcome")
             story.modalPresentationStyle = .fullScreen
             self.present(story, animated: true)
         }catch{

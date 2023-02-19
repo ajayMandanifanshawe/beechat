@@ -47,7 +47,7 @@
                                         <rect key="frame" x="0.0" y="337.66666666666674" width="390" height="506.33333333333326"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Beechat" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Pmh-PR-j0K">
-                                                <rect key="frame" x="20" y="49" width="350" height="95.666666666666686"/>
+                                                <rect key="frame" x="20" y="49.000000000000007" width="350" height="95.666666666666686"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -1103,6 +1103,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Status" largeTitleDisplayMode="always" id="7iW-Yt-gM3"/>
                     <connections>
+                        <outlet property="editStatusField" destination="qd7-53-Z1m" id="g4h-pl-ghD"/>
                         <outlet property="statusMessage" destination="6a9-1J-ztJ" id="NND-Jd-9P5"/>
                     </connections>
                 </tableViewController>
