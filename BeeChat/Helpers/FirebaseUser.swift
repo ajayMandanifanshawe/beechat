@@ -85,6 +85,33 @@ class FirebaseUser{
        
     }
     
+    func getAllUser(completion: @escaping (_ alluser:[User])->Void){
+        
+        var getuser:[User] = []
+        
+        Firestore.firestore().collection(CollectionFire.Users.rawValue).getDocuments { query, error in
+            
+            guard let query = query else {
+                return
+            }
+            
+            let tempuser = query.documents.compactMap { userall -> User in
+               try! userall.data(as: User.self)
+            }
+            
+            for user in tempuser{
+                if (user.id != User.currentId)
+                {
+                    getuser.append(user)
+                }
+            }
+            
+            completion(getuser)
+            
+        }
+        
+    }
+    
 }
 
 
@@ -99,3 +126,5 @@ func saveUserLocally(user:User)
         
     }
 }
+
+

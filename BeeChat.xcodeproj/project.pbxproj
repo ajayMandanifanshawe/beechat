@@ -10,6 +10,8 @@
 		313AD21B298F74240084FD98 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313AD21A298F74240084FD98 /* LoginViewController.swift */; };
 		3169B4572991CB80009566AB /* StatusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3169B4562991CB80009566AB /* StatusTableViewController.swift */; };
 		31B0B43D298F9872009F37FA /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B0B43C298F9872009F37FA /* HomeTableViewController.swift */; };
+		37570CDF29A2DE6C00047A6C /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37570CDE29A2DE6C00047A6C /* SearchTableViewController.swift */; };
+		37570CE129A2DE7B00047A6C /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37570CE029A2DE7B00047A6C /* SearchTableViewCell.swift */; };
 		37669C9D298C65BB001AA388 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 37669C9C298C65BB001AA388 /* FirebaseAnalytics */; };
 		37669C9F298C65BB001AA388 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 37669C9E298C65BB001AA388 /* FirebaseAuth */; };
 		37669CA1298C65BB001AA388 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 37669CA0298C65BB001AA388 /* FirebaseFirestore */; };
@@ -43,6 +45,8 @@
 		313AD21A298F74240084FD98 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3169B4562991CB80009566AB /* StatusTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTableViewController.swift; sourceTree = "<group>"; };
 		31B0B43C298F9872009F37FA /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		37570CDE29A2DE6C00047A6C /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		37570CE029A2DE7B00047A6C /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		37669CBA298C7AC3001AA388 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		37669CBD298C7D8C001AA388 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		37669CC2298C8176001AA388 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -96,6 +100,8 @@
 				377860BA2991B6270093A492 /* ProfileSeetingsTableViewController.swift */,
 				3169B4562991CB80009566AB /* StatusTableViewController.swift */,
 				37B31F3A2991F60F008D7216 /* EditUserInfoTableViewController.swift */,
+				37570CDE29A2DE6C00047A6C /* SearchTableViewController.swift */,
+				37570CE029A2DE7B00047A6C /* SearchTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -253,11 +259,13 @@
 				377ED9D129762EB200C418D5 /* SceneDelegate.swift in Sources */,
 				37669CC7298C8368001AA388 /* FirebaseUser.swift in Sources */,
 				313AD21B298F74240084FD98 /* LoginViewController.swift in Sources */,
+				37570CDF29A2DE6C00047A6C /* SearchTableViewController.swift in Sources */,
 				37669CC3298C8176001AA388 /* User.swift in Sources */,
 				37B31F3D2991F81B008D7216 /* FirebaseProfile.swift in Sources */,
 				31B0B43D298F9872009F37FA /* HomeTableViewController.swift in Sources */,
 				37669CBE298C7D8C001AA388 /* RegisterViewController.swift in Sources */,
 				3169B4572991CB80009566AB /* StatusTableViewController.swift in Sources */,
+				37570CE129A2DE7B00047A6C /* SearchTableViewCell.swift in Sources */,
 				377860BB2991B6270093A492 /* ProfileSeetingsTableViewController.swift in Sources */,
 				37669CC5298C829C001AA388 /* Helper.swift in Sources */,
 			);
