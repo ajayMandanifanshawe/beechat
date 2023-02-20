@@ -34,6 +34,19 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating 
             return filteredUser.count
         }
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let story = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "profilevc") as! ProfileViewController
+        story.modalPresentationStyle = .fullScreen
+        if isSearchBarEmpty() {
+            story.user = allusers[indexPath.row]
+            
+        } else {
+            story.user =  filteredUser[indexPath.row]
+          
+        }
+        self.navigationController?.pushViewController(story, animated: true)
+    }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "searchcell", for: indexPath) as! SearchTableViewCell

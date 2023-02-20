@@ -9,23 +9,33 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet weak var status: UILabel!
+    @IBOutlet weak var usernumber: UILabel!
+    @IBOutlet weak var usermail: UILabel!
+    @IBOutlet weak var username: UILabel!
+    @IBOutlet weak var avatarimg: UIImageView!
     @IBOutlet weak var banner: UIView!
+    var user:User? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        banner.layer.cornerRadius = 20
+        if let user = user{
+            usernumber.text = user.phoneNumber
+            usermail.text = user.email
+            username.text = user.username
+            status.text = user.status
+            if (user.profileImg == "")
+            {
+                avatarimg.image = UIImage(systemName: "person.circle.fill")
+            }else{
+                
+            }
+        }
+
     }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func startchatbtn(_ sender: UIButton) {
     }
-    */
-
 }
