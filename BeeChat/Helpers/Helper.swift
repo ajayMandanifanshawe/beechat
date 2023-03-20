@@ -9,6 +9,8 @@ import Foundation
 
 let ConstCurrentUser = "currentUser"
 enum CollectionFire:String{
-    case Users 
+    case Users
+    case Recent
+    case Message
 
 }

@@ -37,5 +37,11 @@ class ProfileViewController: UIViewController {
 
 
     @IBAction func startchatbtn(_ sender: UIButton) {
+        
+       let chatroomid =  startchat(user1: User.currentUser!, user2: user!)
+        
+        let privatChatView = MessageViewController(chatId: chatroomid,recepientId: user?.id ?? "",recepientName: user?.username ?? "")
+        privatChatView.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(privatChatView, animated: true)
     }
 }

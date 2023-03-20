@@ -10,6 +10,10 @@
 		313AD21B298F74240084FD98 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313AD21A298F74240084FD98 /* LoginViewController.swift */; };
 		3169B4572991CB80009566AB /* StatusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3169B4562991CB80009566AB /* StatusTableViewController.swift */; };
 		31B0B43D298F9872009F37FA /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B0B43C298F9872009F37FA /* HomeTableViewController.swift */; };
+		3733852729C037F70033AE7B /* RecentChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3733852629C037F70033AE7B /* RecentChat.swift */; };
+		3733852929C03D230033AE7B /* RecentChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3733852829C03D230033AE7B /* RecentChatTableViewCell.swift */; };
+		3733852B29C045480033AE7B /* FirebaseRecent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3733852A29C045480033AE7B /* FirebaseRecent.swift */; };
+		3733852D29C04AC20033AE7B /* RecentChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3733852C29C04AC20033AE7B /* RecentChatTableViewController.swift */; };
 		37570CDF29A2DE6C00047A6C /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37570CDE29A2DE6C00047A6C /* SearchTableViewController.swift */; };
 		37570CE129A2DE7B00047A6C /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37570CE029A2DE7B00047A6C /* SearchTableViewCell.swift */; };
 		37669C9D298C65BB001AA388 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 37669C9C298C65BB001AA388 /* FirebaseAnalytics */; };
@@ -18,7 +22,6 @@
 		37669CA3298C65BB001AA388 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 37669CA2298C65BB001AA388 /* FirebaseFirestoreSwift */; };
 		37669CA5298C65BB001AA388 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 37669CA4298C65BB001AA388 /* FirebaseMessaging */; };
 		37669CA7298C65BB001AA388 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 37669CA6298C65BB001AA388 /* FirebaseStorage */; };
-		37669CAA298C6DAA001AA388 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 37669CA9298C6DAA001AA388 /* Realm */; };
 		37669CAD298C71FF001AA388 /* Gallery in Frameworks */ = {isa = PBXBuildFile; productRef = 37669CAC298C71FF001AA388 /* Gallery */; };
 		37669CB0298C726B001AA388 /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 37669CAF298C726B001AA388 /* MessageKit */; };
 		37669CB3298C72CC001AA388 /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 37669CB2298C72CC001AA388 /* ProgressHUD */; };
@@ -37,6 +40,21 @@
 		377ED9D629762EB200C418D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 377ED9D429762EB200C418D5 /* Main.storyboard */; };
 		377ED9D829762EB400C418D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 377ED9D729762EB400C418D5 /* Assets.xcassets */; };
 		377ED9DB29762EB400C418D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 377ED9D929762EB400C418D5 /* LaunchScreen.storyboard */; };
+		37915F0829C7C3D300BC8047 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37915F0729C7C3D200BC8047 /* MessageViewController.swift */; };
+		37AA60AA29C7C899009D3EE1 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 37AA60A929C7C899009D3EE1 /* Realm */; };
+		37AA60AC29C7C899009D3EE1 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 37AA60AB29C7C899009D3EE1 /* RealmSwift */; };
+		37AA60AF29C7D27D009D3EE1 /* MessageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AA60AE29C7D27D009D3EE1 /* MessageDataSource.swift */; };
+		37AA60B129C7D28B009D3EE1 /* MessageCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AA60B029C7D28B009D3EE1 /* MessageCellDelegate.swift */; };
+		37AA60B529C7D2B0009D3EE1 /* MessageDisplayDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AA60B429C7D2B0009D3EE1 /* MessageDisplayDelegate.swift */; };
+		37AA60B729C7D2BB009D3EE1 /* MessageLayoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AA60B629C7D2BB009D3EE1 /* MessageLayoutDelegate.swift */; };
+		37AA60B929C7D2D3009D3EE1 /* InputBarAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AA60B829C7D2D3009D3EE1 /* InputBarAccessoryView.swift */; };
+		37AA60BB29C7D8C8009D3EE1 /* MKSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AA60BA29C7D8C8009D3EE1 /* MKSender.swift */; };
+		37AA60BD29C7DA10009D3EE1 /* MKMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AA60BC29C7DA10009D3EE1 /* MKMessage.swift */; };
+		37AA60BF29C7DBBA009D3EE1 /* LocalMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AA60BE29C7DBBA009D3EE1 /* LocalMessage.swift */; };
+		37AA60C129C7DE59009D3EE1 /* RealManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AA60C029C7DE59009D3EE1 /* RealManager.swift */; };
+		37AA60C329C902BA009D3EE1 /* OutgoingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AA60C229C902BA009D3EE1 /* OutgoingMessage.swift */; };
+		37AA60C529C903CC009D3EE1 /* FirebaseMessageListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AA60C429C903CC009D3EE1 /* FirebaseMessageListener.swift */; };
+		37AA60C729C90EC7009D3EE1 /* IncomingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AA60C629C90EC7009D3EE1 /* IncomingMessage.swift */; };
 		37B31F3B2991F60F008D7216 /* EditUserInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B31F3A2991F60F008D7216 /* EditUserInfoTableViewController.swift */; };
 		37B31F3D2991F81B008D7216 /* FirebaseProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B31F3C2991F81B008D7216 /* FirebaseProfile.swift */; };
 /* End PBXBuildFile section */
@@ -45,6 +63,10 @@
 		313AD21A298F74240084FD98 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3169B4562991CB80009566AB /* StatusTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTableViewController.swift; sourceTree = "<group>"; };
 		31B0B43C298F9872009F37FA /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		3733852629C037F70033AE7B /* RecentChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentChat.swift; sourceTree = "<group>"; };
+		3733852829C03D230033AE7B /* RecentChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentChatTableViewCell.swift; sourceTree = "<group>"; };
+		3733852A29C045480033AE7B /* FirebaseRecent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRecent.swift; sourceTree = "<group>"; };
+		3733852C29C04AC20033AE7B /* RecentChatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentChatTableViewController.swift; sourceTree = "<group>"; };
 		37570CDE29A2DE6C00047A6C /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		37570CE029A2DE7B00047A6C /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		37669CBA298C7AC3001AA388 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -62,6 +84,19 @@
 		377ED9D729762EB400C418D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		377ED9DA29762EB400C418D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		377ED9DC29762EB400C418D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37915F0729C7C3D200BC8047 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		37AA60AE29C7D27D009D3EE1 /* MessageDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDataSource.swift; sourceTree = "<group>"; };
+		37AA60B029C7D28B009D3EE1 /* MessageCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCellDelegate.swift; sourceTree = "<group>"; };
+		37AA60B429C7D2B0009D3EE1 /* MessageDisplayDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDisplayDelegate.swift; sourceTree = "<group>"; };
+		37AA60B629C7D2BB009D3EE1 /* MessageLayoutDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageLayoutDelegate.swift; sourceTree = "<group>"; };
+		37AA60B829C7D2D3009D3EE1 /* InputBarAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputBarAccessoryView.swift; sourceTree = "<group>"; };
+		37AA60BA29C7D8C8009D3EE1 /* MKSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKSender.swift; sourceTree = "<group>"; };
+		37AA60BC29C7DA10009D3EE1 /* MKMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMessage.swift; sourceTree = "<group>"; };
+		37AA60BE29C7DBBA009D3EE1 /* LocalMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalMessage.swift; sourceTree = "<group>"; };
+		37AA60C029C7DE59009D3EE1 /* RealManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealManager.swift; sourceTree = "<group>"; };
+		37AA60C229C902BA009D3EE1 /* OutgoingMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutgoingMessage.swift; sourceTree = "<group>"; };
+		37AA60C429C903CC009D3EE1 /* FirebaseMessageListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseMessageListener.swift; sourceTree = "<group>"; };
+		37AA60C629C90EC7009D3EE1 /* IncomingMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingMessage.swift; sourceTree = "<group>"; };
 		37B31F3A2991F60F008D7216 /* EditUserInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserInfoTableViewController.swift; sourceTree = "<group>"; };
 		37B31F3C2991F81B008D7216 /* FirebaseProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,13 +106,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37669CAA298C6DAA001AA388 /* Realm in Frameworks */,
 				37669C9D298C65BB001AA388 /* FirebaseAnalytics in Frameworks */,
 				37669C9F298C65BB001AA388 /* FirebaseAuth in Frameworks */,
 				37669CB0298C726B001AA388 /* MessageKit in Frameworks */,
+				37AA60AC29C7C899009D3EE1 /* RealmSwift in Frameworks */,
 				37669CA5298C65BB001AA388 /* FirebaseMessaging in Frameworks */,
 				37669CB9298C7418001AA388 /* InputBarAccessoryView in Frameworks */,
 				37669CB3298C72CC001AA388 /* ProgressHUD in Frameworks */,
+				37AA60AA29C7C899009D3EE1 /* Realm in Frameworks */,
 				37669CB6298C73B9001AA388 /* SKPhotoBrowser in Frameworks */,
 				37669CA1298C65BB001AA388 /* FirebaseFirestore in Frameworks */,
 				37669CA3298C65BB001AA388 /* FirebaseFirestoreSwift in Frameworks */,
@@ -92,6 +128,7 @@
 		37669CBC298C7D6C001AA388 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				37AA60AD29C7D25D009D3EE1 /* MessageViewsExtension */,
 				377ED9D229762EB200C418D5 /* ViewController.swift */,
 				37669CBD298C7D8C001AA388 /* RegisterViewController.swift */,
 				313AD21A298F74240084FD98 /* LoginViewController.swift */,
@@ -102,6 +139,9 @@
 				37B31F3A2991F60F008D7216 /* EditUserInfoTableViewController.swift */,
 				37570CDE29A2DE6C00047A6C /* SearchTableViewController.swift */,
 				37570CE029A2DE7B00047A6C /* SearchTableViewCell.swift */,
+				3733852829C03D230033AE7B /* RecentChatTableViewCell.swift */,
+				3733852C29C04AC20033AE7B /* RecentChatTableViewController.swift */,
+				37915F0729C7C3D200BC8047 /* MessageViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -110,6 +150,12 @@
 			isa = PBXGroup;
 			children = (
 				37669CC2298C8176001AA388 /* User.swift */,
+				3733852629C037F70033AE7B /* RecentChat.swift */,
+				37AA60BC29C7DA10009D3EE1 /* MKMessage.swift */,
+				37AA60BE29C7DBBA009D3EE1 /* LocalMessage.swift */,
+				37AA60C029C7DE59009D3EE1 /* RealManager.swift */,
+				37AA60C229C902BA009D3EE1 /* OutgoingMessage.swift */,
+				37AA60C629C90EC7009D3EE1 /* IncomingMessage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -120,6 +166,9 @@
 				37669CC4298C829C001AA388 /* Helper.swift */,
 				37669CC6298C8368001AA388 /* FirebaseUser.swift */,
 				37B31F3C2991F81B008D7216 /* FirebaseProfile.swift */,
+				3733852A29C045480033AE7B /* FirebaseRecent.swift */,
+				37AA60BA29C7D8C8009D3EE1 /* MKSender.swift */,
+				37AA60C429C903CC009D3EE1 /* FirebaseMessageListener.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -157,6 +206,18 @@
 			path = BeeChat;
 			sourceTree = "<group>";
 		};
+		37AA60AD29C7D25D009D3EE1 /* MessageViewsExtension */ = {
+			isa = PBXGroup;
+			children = (
+				37AA60AE29C7D27D009D3EE1 /* MessageDataSource.swift */,
+				37AA60B029C7D28B009D3EE1 /* MessageCellDelegate.swift */,
+				37AA60B429C7D2B0009D3EE1 /* MessageDisplayDelegate.swift */,
+				37AA60B629C7D2BB009D3EE1 /* MessageLayoutDelegate.swift */,
+				37AA60B829C7D2D3009D3EE1 /* InputBarAccessoryView.swift */,
+			);
+			path = MessageViewsExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -180,12 +241,13 @@
 				37669CA2298C65BB001AA388 /* FirebaseFirestoreSwift */,
 				37669CA4298C65BB001AA388 /* FirebaseMessaging */,
 				37669CA6298C65BB001AA388 /* FirebaseStorage */,
-				37669CA9298C6DAA001AA388 /* Realm */,
 				37669CAC298C71FF001AA388 /* Gallery */,
 				37669CAF298C726B001AA388 /* MessageKit */,
 				37669CB2298C72CC001AA388 /* ProgressHUD */,
 				37669CB5298C73B9001AA388 /* SKPhotoBrowser */,
 				37669CB8298C7418001AA388 /* InputBarAccessoryView */,
+				37AA60A929C7C899009D3EE1 /* Realm */,
+				37AA60AB29C7C899009D3EE1 /* RealmSwift */,
 			);
 			productName = BeeChat;
 			productReference = 377ED9CB29762EB200C418D5 /* BeeChat.app */;
@@ -217,12 +279,12 @@
 			mainGroup = 377ED9C229762EB200C418D5;
 			packageReferences = (
 				37669C9B298C65BB001AA388 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				37669CA8298C6DAA001AA388 /* XCRemoteSwiftPackageReference "realm-swift" */,
 				37669CAB298C71FF001AA388 /* XCRemoteSwiftPackageReference "Gallery" */,
 				37669CAE298C726B001AA388 /* XCRemoteSwiftPackageReference "MessageKit" */,
 				37669CB1298C72CC001AA388 /* XCRemoteSwiftPackageReference "ProgressHUD" */,
 				37669CB4298C73B9001AA388 /* XCRemoteSwiftPackageReference "SKPhotoBrowser" */,
 				37669CB7298C7418001AA388 /* XCRemoteSwiftPackageReference "InputBarAccessoryView" */,
+				37AA60A829C7C899009D3EE1 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 377ED9CC29762EB200C418D5 /* Products */;
 			projectDirPath = "";
@@ -254,18 +316,35 @@
 			files = (
 				377ED9D329762EB200C418D5 /* ViewController.swift in Sources */,
 				37B31F3B2991F60F008D7216 /* EditUserInfoTableViewController.swift in Sources */,
+				37AA60AF29C7D27D009D3EE1 /* MessageDataSource.swift in Sources */,
+				3733852D29C04AC20033AE7B /* RecentChatTableViewController.swift in Sources */,
+				37AA60C529C903CC009D3EE1 /* FirebaseMessageListener.swift in Sources */,
 				377ED9CF29762EB200C418D5 /* AppDelegate.swift in Sources */,
+				37AA60B729C7D2BB009D3EE1 /* MessageLayoutDelegate.swift in Sources */,
 				377860B92990AA630093A492 /* ProfileViewController.swift in Sources */,
+				37AA60BF29C7DBBA009D3EE1 /* LocalMessage.swift in Sources */,
+				3733852B29C045480033AE7B /* FirebaseRecent.swift in Sources */,
 				377ED9D129762EB200C418D5 /* SceneDelegate.swift in Sources */,
 				37669CC7298C8368001AA388 /* FirebaseUser.swift in Sources */,
+				37AA60C329C902BA009D3EE1 /* OutgoingMessage.swift in Sources */,
 				313AD21B298F74240084FD98 /* LoginViewController.swift in Sources */,
+				37AA60B129C7D28B009D3EE1 /* MessageCellDelegate.swift in Sources */,
+				3733852729C037F70033AE7B /* RecentChat.swift in Sources */,
+				3733852929C03D230033AE7B /* RecentChatTableViewCell.swift in Sources */,
+				37AA60B529C7D2B0009D3EE1 /* MessageDisplayDelegate.swift in Sources */,
 				37570CDF29A2DE6C00047A6C /* SearchTableViewController.swift in Sources */,
 				37669CC3298C8176001AA388 /* User.swift in Sources */,
+				37915F0829C7C3D300BC8047 /* MessageViewController.swift in Sources */,
+				37AA60C129C7DE59009D3EE1 /* RealManager.swift in Sources */,
+				37AA60B929C7D2D3009D3EE1 /* InputBarAccessoryView.swift in Sources */,
+				37AA60BD29C7DA10009D3EE1 /* MKMessage.swift in Sources */,
+				37AA60C729C90EC7009D3EE1 /* IncomingMessage.swift in Sources */,
 				37B31F3D2991F81B008D7216 /* FirebaseProfile.swift in Sources */,
 				31B0B43D298F9872009F37FA /* HomeTableViewController.swift in Sources */,
 				37669CBE298C7D8C001AA388 /* RegisterViewController.swift in Sources */,
 				3169B4572991CB80009566AB /* StatusTableViewController.swift in Sources */,
 				37570CE129A2DE7B00047A6C /* SearchTableViewCell.swift in Sources */,
+				37AA60BB29C7D8C8009D3EE1 /* MKSender.swift in Sources */,
 				377860BB2991B6270093A492 /* ProfileSeetingsTableViewController.swift in Sources */,
 				37669CC5298C829C001AA388 /* Helper.swift in Sources */,
 			);
@@ -493,14 +572,6 @@
 				kind = branch;
 			};
 		};
-		37669CA8298C6DAA001AA388 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/realm-swift.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
 		37669CAB298C71FF001AA388 /* XCRemoteSwiftPackageReference "Gallery" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hyperoslo/Gallery.git";
@@ -541,6 +612,14 @@
 				minimumVersion = 6.0.0;
 			};
 		};
+		37AA60A829C7C899009D3EE1 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -574,11 +653,6 @@
 			package = 37669C9B298C65BB001AA388 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
 		};
-		37669CA9298C6DAA001AA388 /* Realm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 37669CA8298C6DAA001AA388 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = Realm;
-		};
 		37669CAC298C71FF001AA388 /* Gallery */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 37669CAB298C71FF001AA388 /* XCRemoteSwiftPackageReference "Gallery" */;
@@ -603,6 +677,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 37669CB7298C7418001AA388 /* XCRemoteSwiftPackageReference "InputBarAccessoryView" */;
 			productName = InputBarAccessoryView;
+		};
+		37AA60A929C7C899009D3EE1 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37AA60A829C7C899009D3EE1 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		37AA60AB29C7C899009D3EE1 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37AA60A829C7C899009D3EE1 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

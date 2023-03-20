@@ -112,6 +112,32 @@ class FirebaseUser{
         
     }
     
+    func downloadUserFromFirebase(withId:[String],completion: @escaping(_ allUsers:[User]?)->Void )
+    {
+        var count = 0
+        var userArray:[User] = []
+        for userid in withId{
+            Firestore.firestore().collection(CollectionFire.Users.rawValue).document(userid).getDocument { SnapshotDat, error in
+                
+                if error != nil{
+                    completion(nil)
+                    print(error?.localizedDescription ?? "")
+                    return
+                }
+                
+                let user = try? SnapshotDat?.data(as: User.self)
+                userArray.append(user!)
+                count+=1
+                
+                if(count == withId.count)
+                {
+                    completion(userArray)
+                }
+                
+            }
+        }
+    }
+    
 }
 
 
