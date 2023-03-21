@@ -108,5 +108,16 @@ class HomeTableViewController: UITableViewController, UISearchResultsUpdating {
             
         }
     }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+           if editingStyle == .delete{
+               let recent = searchContollers.isActive ? filteredLatest[indexPath.row] : allLatest[indexPath.row]
+               
+               FirebaseLatestListener.shared.deleteLatets(latest: recent)
+               
+               _ = searchContollers.isActive ? self.filteredLatest.remove(at: indexPath.row) : allLatest.remove(at: indexPath.row)
+               tableView.deleteRows(at: [indexPath], with: .automatic)
+           }
+       }
 
 }
