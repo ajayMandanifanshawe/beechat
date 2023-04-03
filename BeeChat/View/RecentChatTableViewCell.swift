@@ -26,13 +26,23 @@ class RecentChatTableViewCell: UITableViewCell {
     }
     
     func config(recentChat:RecentChat){
+        
+        imageChat.layer.cornerRadius = imageChat.frame.size.height/2
+        imageChat.clipsToBounds = true
+        imageChat.contentMode = .scaleToFill
+        
         reciverNamelabel.text = recentChat.receiverName
         message.text = recentChat.lastMessage
         if recentChat.avatarLink == ""{
             imageChat.image = UIImage(systemName: "person.circle.fill")
             
         }else{
-            
+            Filestorage.downloadImageUrl(imageurl: recentChat.avatarLink) { img in
+                DispatchQueue.main.async {
+                    self.imageChat.image = img
+                }
+                
+            }
         }
         
         if recentChat.unreadCounter > 0{

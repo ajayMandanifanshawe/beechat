@@ -25,13 +25,22 @@ class SearchTableViewCell: UITableViewCell {
     
     func configUserCell(user:User)
     {
+        avatarimage.layer.cornerRadius = avatarimage.frame.size.height/2
+        avatarimage.clipsToBounds = true
+        avatarimage.contentMode = .scaleToFill
+        
         emailLabel.text = user.email
         nameLabel.text = user.username
         if(user.profileImg == "")
         {
             avatarimage.image = UIImage(systemName: "person.circle.fill")
         }else{
-            
+            Filestorage.downloadImageUrl(imageurl: user.profileImg) { img in
+                DispatchQueue.main.async {
+                    self.avatarimage.image = img
+                }
+                
+            }
         }
     }
 

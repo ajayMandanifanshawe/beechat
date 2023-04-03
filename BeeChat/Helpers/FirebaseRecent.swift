@@ -159,7 +159,13 @@ func createLatestItems(chatroomid:String,users:[User])
     var membersIdToCreateRecent = [users.first!.id,users.last!.id]
     var getrec = [users.first!,users.last!]
     let index = getrec.firstIndex(of: User.currentUser!)
-    getrec.remove(at: index!)
+
+    if getrec[0].id == User.currentId{
+        getrec.remove(at: 0)
+    }else{
+        getrec.remove(at: 1)
+    }
+   
     let recidgen = getrec.first
     Firestore.firestore().collection(CollectionFire.Recent.rawValue).whereField("chatRoomId",isEqualTo: chatroomid).getDocuments { snapshot, error in
         

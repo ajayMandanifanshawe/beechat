@@ -55,6 +55,7 @@
 		37AA60C329C902BA009D3EE1 /* OutgoingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AA60C229C902BA009D3EE1 /* OutgoingMessage.swift */; };
 		37AA60C529C903CC009D3EE1 /* FirebaseMessageListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AA60C429C903CC009D3EE1 /* FirebaseMessageListener.swift */; };
 		37AA60C729C90EC7009D3EE1 /* IncomingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AA60C629C90EC7009D3EE1 /* IncomingMessage.swift */; };
+		37ACEBA329DABFC300B21713 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ACEBA229DABFC300B21713 /* Storage.swift */; };
 		37B31F3B2991F60F008D7216 /* EditUserInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B31F3A2991F60F008D7216 /* EditUserInfoTableViewController.swift */; };
 		37B31F3D2991F81B008D7216 /* FirebaseProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B31F3C2991F81B008D7216 /* FirebaseProfile.swift */; };
 /* End PBXBuildFile section */
@@ -97,6 +98,7 @@
 		37AA60C229C902BA009D3EE1 /* OutgoingMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutgoingMessage.swift; sourceTree = "<group>"; };
 		37AA60C429C903CC009D3EE1 /* FirebaseMessageListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseMessageListener.swift; sourceTree = "<group>"; };
 		37AA60C629C90EC7009D3EE1 /* IncomingMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingMessage.swift; sourceTree = "<group>"; };
+		37ACEBA229DABFC300B21713 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		37B31F3A2991F60F008D7216 /* EditUserInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserInfoTableViewController.swift; sourceTree = "<group>"; };
 		37B31F3C2991F81B008D7216 /* FirebaseProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -169,6 +171,7 @@
 				3733852A29C045480033AE7B /* FirebaseRecent.swift */,
 				37AA60BA29C7D8C8009D3EE1 /* MKSender.swift */,
 				37AA60C429C903CC009D3EE1 /* FirebaseMessageListener.swift */,
+				37ACEBA229DABFC300B21713 /* Storage.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				37AA60C329C902BA009D3EE1 /* OutgoingMessage.swift in Sources */,
 				313AD21B298F74240084FD98 /* LoginViewController.swift in Sources */,
 				37AA60B129C7D28B009D3EE1 /* MessageCellDelegate.swift in Sources */,
+				37ACEBA329DABFC300B21713 /* Storage.swift in Sources */,
 				3733852729C037F70033AE7B /* RecentChat.swift in Sources */,
 				3733852929C03D230033AE7B /* RecentChatTableViewCell.swift in Sources */,
 				37AA60B529C7D2B0009D3EE1 /* MessageDisplayDelegate.swift in Sources */,

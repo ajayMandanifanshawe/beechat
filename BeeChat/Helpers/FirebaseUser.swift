@@ -85,6 +85,44 @@ class FirebaseUser{
        
     }
     
+    func saveImageOnRecent(imageurl:String)
+    {
+        Firestore.firestore().collection(CollectionFire.Recent.rawValue).whereField("receiverId",isEqualTo: User.currentId) .getDocuments { querysnap , error in
+            guard let snapshot = querysnap else{
+                return
+            }
+            
+          
+            let allres = snapshot.documents.compactMap { query -> RecentChat? in
+                do{
+                    return try query.data(as: RecentChat.self)
+                }catch{
+                    print("error found")
+                    print(error.localizedDescription)
+                }
+               return nil
+                
+            }
+            
+            
+            
+            let val = ["avatarLink":imageurl] as [String:Any]
+//            for userId in memeberIds{
+//                Firestore.firestore().collection(CollectionFire.Message.rawValue).document(userId).collection(message.chatRoomId).document(message.id).updateData(val)
+//            }
+            
+            for res in allres{
+                Firestore.firestore().collection(CollectionFire.Recent.rawValue).document(res.id)
+                    .updateData(val)
+                
+                
+            }
+
+           
+        }
+       
+    }
+    
     func getAllUser(completion: @escaping (_ alluser:[User])->Void){
         
         var getuser:[User] = []

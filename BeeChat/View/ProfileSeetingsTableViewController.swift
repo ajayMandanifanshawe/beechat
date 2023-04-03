@@ -16,6 +16,7 @@ class ProfileSeetingsTableViewController: UITableViewController {
     @IBOutlet weak var userProfileimage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         updateUI()
     }
 
@@ -51,6 +52,9 @@ class ProfileSeetingsTableViewController: UITableViewController {
 
     
     func updateUI(){
+        userProfileimage.layer.cornerRadius = userProfileimage.frame.size.height/2
+        userProfileimage.clipsToBounds = true
+        userProfileimage.contentMode = .scaleToFill
         if let user = User.currentUser{
             nameLabel.text = user.username
             emailLabel.text = user.email
@@ -60,6 +64,14 @@ class ProfileSeetingsTableViewController: UITableViewController {
             {
                 userProfileimage.image = UIImage(systemName: "person.circle.fill")
             }else{
+ 
+                Filestorage.downloadImageUrl(imageurl: user.profileImg) { img in
+                    DispatchQueue.main.async {
+                        self.userProfileimage.image = img
+                    }
+                    
+                }
+                
                 
             }
         }else{
