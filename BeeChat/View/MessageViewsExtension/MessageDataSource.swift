@@ -37,7 +37,7 @@ extension MessageViewController:MessagesDataSource{
     func cellBottomLabelAttributedText(for message: MessageType, at indexPath: IndexPath) -> NSAttributedString? {
         if isFromCurrentSender(message: message){
             let message2 = mkMessages[indexPath.section]
-            let status = indexPath.section == mkMessages.count - 1 ?  " " + message2.readDate.time() : ""
+            let status = indexPath.section == mkMessages.count - 1 ? message2.status + " " + message2.readDate.time() : ""
             return NSAttributedString(string: status,attributes: [.font: UIFont.boldSystemFont(ofSize: 10),.foregroundColor:UIColor.darkGray])
         }
         return nil

@@ -21,7 +21,7 @@
     {
       "identity" : "firebase-ios-sdk",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/firebase/firebase-ios-sdk",
+      "location" : "https://github.com/firebase/firebase-ios-sdk.git",
       "state" : {
         "branch" : "master",
         "revision" : "74d80aa651281b0a5885a428119959ff8ad60d68"
@@ -30,7 +30,7 @@
     {
       "identity" : "gallery",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/hyperoslo/Gallery",
+      "location" : "https://github.com/hyperoslo/Gallery.git",
       "state" : {
         "branch" : "master",
         "revision" : "ac4ab785951c82d9a4ab5a9f96c4649c4fc02e0b"
@@ -102,7 +102,7 @@
     {
       "identity" : "messagekit",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/MessageKit/MessageKit",
+      "location" : "https://github.com/MessageKit/MessageKit.git",
       "state" : {
         "branch" : "main",
         "revision" : "0d19ea03dea3b333579d1317e323b802cffba2c7"
@@ -120,7 +120,7 @@
     {
       "identity" : "progresshud",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/relatedcode/ProgressHUD",
+      "location" : "https://github.com/relatedcode/ProgressHUD.git",
       "state" : {
         "branch" : "master",
         "revision" : "b36f1235fe224717beeaab5fe457862c8428de5a"
@@ -147,7 +147,7 @@
     {
       "identity" : "realm-swift",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/realm/realm-swift",
+      "location" : "https://github.com/realm/realm-swift.git",
       "state" : {
         "branch" : "master",
         "revision" : "8e10ded4143191d6aaa42a146d44efcbf0260c4e"
@@ -156,7 +156,7 @@
     {
       "identity" : "skphotobrowser",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/suzuki-0000/SKPhotoBrowser",
+      "location" : "https://github.com/suzuki-0000/SKPhotoBrowser.git",
       "state" : {
         "branch" : "master",
         "revision" : "fd0e07de938e1bb961c55c7c4c6d2715d4c67d0e"

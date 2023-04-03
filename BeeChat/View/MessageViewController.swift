@@ -71,8 +71,34 @@ class MessageViewController: MessagesViewController {
 //        navigationItem.largeTitleDisplayMode = .never
         configLeftBarButton()
         configcustomTitle()
+        listenforreadstatuschnage()
     }
     
+    func listenforreadstatuschnage(){
+        FirebaseMessageListner.shared.listenForReadStatusChnage(User.currentId, collectionId: chatId) { updatemessage in
+            
+            if updatemessage.status == "Read"{
+                self.updatemessages(updatemessage)
+            }
+            
+        }
+    }
+    
+    func updatemessages(_ updatemessage:LocalMessage){
+        for index in 0 ..< mkMessages.count{
+            let tempmessage = mkMessages[index]
+            if updatemessage.id == tempmessage.messageId{
+                mkMessages[index].status = updatemessage.status
+                mkMessages[index].readDate = updatemessage.readDate
+                RealmManager.shared.saveToRealm(obj: updatemessage)
+                if mkMessages[index].status == "Read"{
+                    self.messagesCollectionView.reloadData()
+                }
+                    
+            }
+            
+        }
+    }
 
     func updateTypingIndicator(_ show:Bool){
         subTitleLabel.text = show ? "Typing... " : ""
@@ -183,10 +209,23 @@ class MessageViewController: MessagesViewController {
     
     func insertMessage(localMessage:LocalMessage){
         
+        if localMessage.senderId != User.currentId{
+            markasreadmessage(localMessage: localMessage)
+        }
+       
         let incoming = IncomingMessage(messageCollectionView: self)
         self.mkMessages.append(incoming.createMessage(localMessage: localMessage))
        
     }
+    
+    func markasreadmessage(localMessage:LocalMessage)
+    {
+        if localMessage.senderId != User.currentId && localMessage.status != "Read"{
+            FirebaseMessageListner.shared.updateMessageInFirebase(localMessage, memeberIds: [User.currentId,recepientId])
+        }
+        
+    }
+    
     
     func configLeftBarButton(){
         self.navigationItem.title = ""
@@ -204,6 +243,7 @@ class MessageViewController: MessagesViewController {
     
     @objc func backbtnPress(){
         FirebaseLatestListener.shared.resetRecentCounter(chatRoomId: chatId)
+        removeListener()
         self.navigationController?.popToRootViewController(animated: true)
     }
     func lastMessageDate()->Date{
@@ -214,5 +254,9 @@ class MessageViewController: MessagesViewController {
     
     func listenForNewChats(){
         FirebaseMessageListner.shared.listenForNewChats(documentId: User.currentId, collectionid: chatId, lastMessageDate: lastMessageDate())
+    }
+    func removeListener(){
+     
+        FirebaseMessageListner.shared.removeListener()
     }
 }
