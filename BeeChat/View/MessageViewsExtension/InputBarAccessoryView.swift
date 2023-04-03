@@ -12,7 +12,7 @@ extension MessageViewController:InputBarAccessoryViewDelegate{
     
     func inputBar(_ inputBar: InputBarAccessoryView, textViewTextDidChangeTo text: String) {
         if text != ""{
-//            typingIndecatorUpdate()
+           typingIndecatorUpdate()
             
         }
     }

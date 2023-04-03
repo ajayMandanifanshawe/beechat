@@ -56,6 +56,7 @@
 		37AA60C529C903CC009D3EE1 /* FirebaseMessageListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AA60C429C903CC009D3EE1 /* FirebaseMessageListener.swift */; };
 		37AA60C729C90EC7009D3EE1 /* IncomingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AA60C629C90EC7009D3EE1 /* IncomingMessage.swift */; };
 		37ACEBA329DABFC300B21713 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ACEBA229DABFC300B21713 /* Storage.swift */; };
+		37ACEBA529DB2A2700B21713 /* FirebaseTypingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ACEBA429DB2A2700B21713 /* FirebaseTypingIndicator.swift */; };
 		37B31F3B2991F60F008D7216 /* EditUserInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B31F3A2991F60F008D7216 /* EditUserInfoTableViewController.swift */; };
 		37B31F3D2991F81B008D7216 /* FirebaseProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B31F3C2991F81B008D7216 /* FirebaseProfile.swift */; };
 /* End PBXBuildFile section */
@@ -99,6 +100,7 @@
 		37AA60C429C903CC009D3EE1 /* FirebaseMessageListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseMessageListener.swift; sourceTree = "<group>"; };
 		37AA60C629C90EC7009D3EE1 /* IncomingMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingMessage.swift; sourceTree = "<group>"; };
 		37ACEBA229DABFC300B21713 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		37ACEBA429DB2A2700B21713 /* FirebaseTypingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseTypingIndicator.swift; sourceTree = "<group>"; };
 		37B31F3A2991F60F008D7216 /* EditUserInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserInfoTableViewController.swift; sourceTree = "<group>"; };
 		37B31F3C2991F81B008D7216 /* FirebaseProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,6 +174,7 @@
 				37AA60BA29C7D8C8009D3EE1 /* MKSender.swift */,
 				37AA60C429C903CC009D3EE1 /* FirebaseMessageListener.swift */,
 				37ACEBA229DABFC300B21713 /* Storage.swift */,
+				37ACEBA429DB2A2700B21713 /* FirebaseTypingIndicator.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				37AA60C129C7DE59009D3EE1 /* RealManager.swift in Sources */,
 				37AA60B929C7D2D3009D3EE1 /* InputBarAccessoryView.swift in Sources */,
 				37AA60BD29C7DA10009D3EE1 /* MKMessage.swift in Sources */,
+				37ACEBA529DB2A2700B21713 /* FirebaseTypingIndicator.swift in Sources */,
 				37AA60C729C90EC7009D3EE1 /* IncomingMessage.swift in Sources */,
 				37B31F3D2991F81B008D7216 /* FirebaseProfile.swift in Sources */,
 				31B0B43D298F9872009F37FA /* HomeTableViewController.swift in Sources */,
@@ -497,13 +501,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 37CVKHAXQ4;
+				DEVELOPMENT_TEAM = 3ZP94LX8H6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BeeChat/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -524,13 +529,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KA3B9KGZ8K;
+				DEVELOPMENT_TEAM = 3ZP94LX8H6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BeeChat/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

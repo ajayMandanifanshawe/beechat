@@ -16,7 +16,7 @@ class MessageViewController: MessagesViewController {
     var chatId = ""
     var recepientId = ""
     var recepientName = ""
-    
+    var typingCounter = 0
     let leftbarButtonView:UIView = {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
         return view
@@ -72,6 +72,9 @@ class MessageViewController: MessagesViewController {
         configLeftBarButton()
         configcustomTitle()
         listenforreadstatuschnage()
+        
+        createTypingObserver()
+       
     }
     
     func listenforreadstatuschnage(){
@@ -256,7 +259,31 @@ class MessageViewController: MessagesViewController {
         FirebaseMessageListner.shared.listenForNewChats(documentId: User.currentId, collectionid: chatId, lastMessageDate: lastMessageDate())
     }
     func removeListener(){
-     
+        FirebaseTypingListener.shared.removeTypingListener()
         FirebaseMessageListner.shared.removeListener()
     }
+    func createTypingObserver(){
+        FirebaseTypingListener.shared.createTypingObserver(chatRoomId: chatId) { isTyping in
+            DispatchQueue.main.async {
+                self.updateTypingIndicator(isTyping)
+            }
+        }
+    }
+    
+    func typingIndecatorUpdate(){
+        typingCounter += 1
+        FirebaseTypingListener.saveTypingCounter(typing: true, chatRoomId: chatId)
+        DispatchQueue.main.asyncAfter(deadline: .now()+1.5){
+            self.typingCounterStop()
+        }
+    }
+    
+    func typingCounterStop(){
+        typingCounter -= 1
+        if typingCounter == 0{
+            FirebaseTypingListener.saveTypingCounter(typing: false, chatRoomId: chatId)
+        }
+    }
+    
+
 }

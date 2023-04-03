@@ -12,5 +12,6 @@ enum CollectionFire:String{
     case Users
     case Recent
     case Message
+    case Typing
 
 }
